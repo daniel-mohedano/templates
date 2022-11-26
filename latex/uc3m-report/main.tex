@@ -1,0 +1,129 @@
+%% ===============================================================
+%% PACKAGES
+%% ===============================================================
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[backend=biber,style=numeric,citestyle=numeric]{biblatex}
+\bibliography{bibliography}
+
+\usepackage[top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm]{geometry}   % Margin definition
+\usepackage{graphics}   % Basic graphics management
+\usepackage{graphicx}   % Additional functionality to \includegraphics
+\usepackage{minted}     % For source code 
+\usepackage{titling}    % For customization of the \maketitle command
+\usepackage{hyperref}   % For hyperrefing things
+\usepackage{amsmath}    % For math things
+\usepackage{appendix}   % To allow appendices
+\usepackage{fancyhdr}   % Fancy headers and footers
+\pagestyle{fancy}
+\usepackage{lastpage}   % To use \LastPage in footers
+\usepackage{csquotes}   % Avoids warning for babel
+
+\usepackage{lipsum}     % For lore ispum generation
+
+%% ===============================================================
+%% DEFINITIONS AND CONFIGURATION
+%% ===============================================================
+% Title variables definition
+\newcommand{\subject}{Sample Subject}
+\title{Template\thanks{No way this works}}
+\newcommand{\subtitle}{Subtitle}
+\author{John Smith \\ Mike Crown}
+\date{\today}
+
+% Page separator depending on language
+\newcommand\mypageseparator{%
+    \iflanguage{spanish}{de}{%
+    \iflanguage{english}{of}{%
+}}}
+
+% Listings name in TOC depending on language
+\newcommand\mytoclisting{%
+    \iflanguage{spanish}{Índice de Código}{%
+    \iflanguage{english}{List of Source Code}{%
+}}}
+\renewcommand{\listoflistingscaption}{\mytoclisting}
+
+% Header and footer definition
+\renewcommand\sectionmark[1]{\markboth{#1}{}}
+\fancypagestyle{myplain}{% Regular pagestyle
+    \fancyhf{} % Clear all header and footer fields
+    \fancyhead[L]{\textbf{\thetitle}}
+    \fancyhead[R]{\includegraphics[width=2cm]{images/uc3m-short.jpg}}
+    \fancyfoot[L]{\nouppercase{\textit{\leftmark}}}
+    \fancyfoot[R]{\thepage\ \mypageseparator\ \pageref{LastPage}}
+    \renewcommand{\headrulewidth}{2pt}
+    \renewcommand{\footrulewidth}{0.4pt}
+    \renewcommand{\headheight}{25pt}    % Avoids warnings somehow
+}
+
+\fancypagestyle{mytoc}{% TOC Page style
+    \fancyhf{} % Clear all header and footer fields
+    \fancyhead[L]{\textbf{\thetitle}}
+    \fancyhead[R]{\includegraphics[width=2cm]{images/uc3m-short.jpg}}
+    \fancyfoot[R]{\thepage}
+    \renewcommand{\headrulewidth}{2pt}
+    \renewcommand{\footrulewidth}{0.4pt}
+    \renewcommand{\headheight}{25pt}    % Avoids warnings somehow
+}
+
+
+% Title definition
+\makeatletter
+\def\@maketitle{%
+    \null
+    \vskip 1cm%
+    \begin{center}%
+        \let \footnote \thanks
+        {\scshape\Large \subject \par}%
+        \vskip 1.5cm%
+        {\textsf{\Huge \@title} \par}%
+        {\textsf{\Large \subtitle} \par}%
+        \vskip 2cm%
+        {\Large \@author\par}%
+        \vfill%
+        {\large \@date}%
+    \end{center}%
+    \par
+    \vskip 1cm
+}
+\makeatother
+
+
+%% ===============================================================
+%% DOCUMENT
+%% ===============================================================
+
+\begin{document}
+% General document settings
+\setlength\parindent{0pt}
+\setlength{\parskip}{1em}
+
+% Title Page
+\pagestyle{empty}
+\pagenumbering{gobble}
+\maketitle
+\newpage
+
+% TOC
+\pagenumbering{roman}
+\pagestyle{mytoc}
+\tableofcontents
+\listoffigures
+\listoflistings
+\newpage
+
+% Contents
+\pagestyle{myplain}
+\pagenumbering{arabic}
+
+\include{contents/content}
+\include{contents/example_code}
+
+\newpage
+\printbibliography
+
+
+\end{document}
+

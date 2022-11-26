@@ -1,0 +1,23 @@
+\section{Example source code}
+Example source code:
+\begin{minted}[frame=lines, linenos, breaklines]{c}
+int x = 5;
+for (int i = 0; i < x; ++i){
+    fprintf(stdout, "Hello!");
+}
+\end{minted}
+
+Can also be used with \texttt{listing} environment:
+
+\begin{listing}[H]
+    \begin{minted}[frame=lines, linenos, breaklines]{c}
+    int x = 5;
+    for (int i = 0; i < x; ++i){
+        fprintf(stdout, "Hello!");
+    }
+    \end{minted}
+    \caption{Example of a listing.}
+    \label{lst:example}
+\end{listing}
+
+This was an example of a listing, as shown in \ref{lst:example}.
