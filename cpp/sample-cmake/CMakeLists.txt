@@ -24,9 +24,9 @@ endforeach()
 # Define executables and build them
 list (APPEND EXES main_a main_b)
 foreach(e IN LISTS EXES)
-    add_executable("${e}" "${PROJECT_SOURCE_DIR}/src/${e}.cpp")
-    target_link_libraries("${e}" ${EXE_LIBS})
-    target_include_directories("${e}" PUBLIC "${PROJECT_BINARY_DIR}" ${EXE_INCLUDES})
+    add_executable("${e}.exe" "${PROJECT_SOURCE_DIR}/src/${e}.cpp")
+    target_link_libraries("${e}.exe" ${EXE_LIBS})
+    target_include_directories("${e}.exe" PUBLIC "${PROJECT_BINARY_DIR}" ${EXE_INCLUDES})
 endforeach()
 
 
