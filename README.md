@@ -9,11 +9,11 @@
 <!-- TOC -->
 ## Table of Contents
 
-- [But why?](#-but-why)
-- [But how (do I use it)?](#-but-how-do-i-use-it)
-- [But what?](#-but-what)
-- [Contributing](#-contributing)
-- [License](#-license)
+- [But why?](#but-why)
+- [But how (do I use it)?](#but-how-do-i-use-it)
+- [But what?](#but-what)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## But why?
 
