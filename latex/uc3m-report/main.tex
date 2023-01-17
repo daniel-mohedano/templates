@@ -19,6 +19,10 @@
 \pagestyle{fancy}
 \usepackage{lastpage}   % To use \LastPage in footers
 \usepackage{csquotes}   % Avoids warning for babel
+\usepackage{multirow}   % For tables
+\usepackage[table,xcdraw]{xcolor}   % For tables
+\usepackage{caption}
+\usepackage{subcaption} % For subfigures
 
 \usepackage{lipsum}     % For lore ispum generation
 
@@ -96,6 +100,11 @@
 %% ===============================================================
 
 \begin{document}
+% Update 'table' name in spanish
+\iflanguage{spanish}{\renewcommand{\listtablename}{Índice de tablas}}
+
+\iflanguage{spanish}{\renewcommand{\tablename}{Tabla}}
+
 % General document settings
 \setlength\parindent{0pt}
 \setlength{\parskip}{1em}
@@ -111,6 +120,7 @@
 \pagestyle{mytoc}
 \tableofcontents
 \listoffigures
+\listoftables
 \listoflistings
 \newpage
 
