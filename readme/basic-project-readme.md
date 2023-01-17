@@ -19,7 +19,7 @@
 
 ## But why?
 
-Explanation of why did you start the project and your objetives with it.
+Explanation of why did you start the project and your objectives with it.
 
 ## But how (do I use it)?
 
