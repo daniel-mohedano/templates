@@ -1,10 +1,12 @@
-# Repo Title
+<!--Basic README.md template-->
+<!--Variables to change: github_username, repo_name, repo_title, default_branch, license_name-->
+# repo_title
 
 > Project kinda description
 
 
 <!-- Project Shields -->
-![contributors](https://img.shields.io/github/contributors/github_username/repo_name.svg?style=flat-square) [![license](https://img.shields.io/github/license/github_username/repo_name.svg?style=flat-square)](https://github.com/github_username/repo_name/blob/master/LICENSE) ![stars](https://img.shields.io/github/stars/github_username/repo_name.svg?style=flat-square) ![forks](https://img.shields.io/github/forks/github_username/repo_name.svg?style=flat-square) [![PRs welcome](https://img.shields.io/badge/PRs-welcome!-green.svg)](https://github.com/github_username/repo_name/issues)
+![contributors](https://img.shields.io/github/contributors/github_username/repo_name.svg?style=flat-square) [![license](https://img.shields.io/github/license/github_username/repo_name.svg?style=flat-square)](https://github.com/github_username/repo_name/blob/default_branch/LICENSE) ![stars](https://img.shields.io/github/stars/github_username/repo_name.svg?style=flat-square) ![forks](https://img.shields.io/github/forks/github_username/repo_name.svg?style=flat-square) [![PRs welcome](https://img.shields.io/badge/PRs-welcome!-green.svg)](https://github.com/github_username/repo_name/issues)
 
 <!-- TOC -->
 ## Table of Contents
@@ -59,4 +61,4 @@ If you have ideas on how to improve the project, go ahead!
 
 ## License
 
-Distributed under the [license_name](https://github.com/github_username/repo_name/blob/master/LICENSE) license © [github_username](https://github.com/github_username)
+Distributed under the [license_name](https://github.com/github_username/repo_name/blob/default_branch/LICENSE) license © [github_username](https://github.com/github_username)
