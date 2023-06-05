@@ -29,6 +29,7 @@ Stored the following templates for now:
 - [readme](https://github.com/danmohedano/templates/blob/master/readme/): README.md templates, like this one! 
 - [latex](https://github.com/danmohedano/templates/blob/master/latex/): For all things latex related.
 - [cpp](https://github.com/danmohedano/templates/blob/master/cpp/): For all things cpp related.
+- [obsidian](https://github.com/danmohedano/templates/blob/master/obsidian/): Templates for Obsidian Vaults.
 
 ## Contributing
 

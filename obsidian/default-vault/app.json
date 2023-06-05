@@ -1,0 +1,14 @@
+{
+  "livePreview": false,
+  "vimMode": false,
+  "attachmentFolderPath": "./attachments",
+  "showInlineTitle": false,
+  "showLineNumber": true,
+  "spellcheck": true,
+  "spellcheckLanguages": [
+    "en-US",
+    "es-ES"
+  ],
+  "useTab": false,
+  "alwaysUpdateLinks": true
+}
