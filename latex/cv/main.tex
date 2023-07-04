@@ -31,7 +31,7 @@
 \newcommand{\entryHeader}[4]{
     \item
     \vspace{0.5mm}
-        \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
             \textbf{#1} & \textit{#2} \\
             \textit{#3} & #4 \\
         \end{tabular*}
@@ -46,7 +46,7 @@
     \end{itemize}
 }
 
-\newcommand{\elementListStart}{\begin{itemize}[labelsep=3pt]}
+\newcommand{\elementListStart}{\vspace{-5pt}\begin{itemize}[labelsep=3pt]}
 \newcommand{\elementListEnd}{\end{itemize}\vspace{-10pt}}
 
 \newcommand{\skillEntry}[2]{
@@ -60,7 +60,7 @@
 \newcommand{\descriptionHeader}[3]{
     \item
     \vspace{0.5mm}
-        \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
             \textbf{#1} & \textit{#2} \\
             \multicolumn{2}{l}{#3} \\
         \end{tabular*}
