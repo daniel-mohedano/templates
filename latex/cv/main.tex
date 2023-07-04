@@ -1,0 +1,137 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}     % Default UTF-8
+\usepackage{geometry}           % Change default margins
+\geometry{left=1.2cm, top=1cm, right=1.2cm, bottom=1cm}
+\usepackage{xcolor}             % Color support
+\usepackage[T1]{fontenc}        % Use different fonts
+\usepackage{fourier}            % Fourier font
+\usepackage{fontawesome}        % Font containing web-related icons
+\usepackage{multicol}           % Additional column functionality
+\usepackage{multirow}           % Rows that span multiple columns
+\usepackage{tabularx}           % Additional tabular functionality
+\usepackage{hyperref}           % References
+\usepackage{enumitem}           % Additional features for itemize
+
+% COLOR DEFINITION
+\definecolor{sectioncolor}{RGB}{120, 35, 0}
+
+% CONFIGURATION OF BASIC ELEMENTS
+\setlength{\parindent}{0mm}
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\circ$}
+
+% CUSTOM CV ELEMENTS
+\newcommand{\sectionRuler}{\vspace{6pt}\hrule\vspace{4pt}}
+
+\newcommand{\resumeSection}[1]{
+    \textsc{\Large{\raggedright\textcolor{sectioncolor}{#1}}}
+    \sectionRuler
+}
+
+\newcommand{\entryHeader}[4]{
+    \item
+    \vspace{0.5mm}
+        \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            \textbf{#1} & \textit{#2} \\
+            \textit{#3} & #4 \\
+        \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\entryListStart}{
+    \vspace{-10pt}
+    \begin{itemize}[leftmargin=*, labelsep=0pt]
+}
+\newcommand{\entryListEnd}{
+    \end{itemize}
+}
+
+\newcommand{\elementListStart}{\begin{itemize}[labelsep=3pt]}
+\newcommand{\elementListEnd}{\end{itemize}\vspace{-10pt}}
+
+\newcommand{\skillEntry}[2]{
+    \item
+    \begin{tabular*}{\textwidth}[t]{p{0.18\textwidth}l}
+        \textbf{#1} & #2 \\
+    \end{tabular*}
+    \vspace{-22pt}
+}
+
+\newcommand{\descriptionHeader}[3]{
+    \item
+    \vspace{0.5mm}
+        \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            \textbf{#1} & \textit{#2} \\
+            \multicolumn{2}{l}{#3} \\
+        \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%% INFORMATION %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\name}{Your Name}
+\newcommand{\github}{yourgithub}
+\newcommand{\email}{youremail}
+\newcommand{\secondemail}{anotheremail}
+\newcommand{\linkedin}{yourlinkedin}
+
+\newcommand{\resumeTitle}{
+    \textbf{\Huge \name}
+
+    \vspace{8pt}
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \faGithub \enspace \github &  \email \enspace \faEnvelope \\
+        \faLinkedin \enspace \linkedin & \secondemail  \enspace \faEnvelope\\
+    \end{tabular*}
+    \vspace{4pt}
+}
+
+\begin{document}
+\pagenumbering{gobble}
+\resumeTitle
+
+\resumeSection{Education}
+\entryListStart
+    \entryHeader{College Name}{Year}{Degree}{Grades}
+    \entryHeader{College Name}{Year}{Degree}{Grades}
+\entryListEnd
+
+\resumeSection{Experience}
+\entryListStart
+    \entryHeader{Role}{Dates}{Company Name}{City}
+    \elementListStart
+        \item Description line 1
+        \item Description line 2
+    \elementListEnd
+    \entryHeader{Role}{Dates}{Company Name}{City}
+    \elementListStart
+        \item Description line 1
+        \item Description line 2
+    \elementListEnd
+\entryListEnd
+
+\resumeSection{Projects}
+\entryListStart
+    \descriptionHeader{Project Name}{Dates}{Description}
+    \descriptionHeader{Project Name}{Dates}{Description}
+\entryListEnd
+
+\resumeSection{Achievements}
+\entryListStart
+    \descriptionHeader{Achievement}{Dates}{Description}
+    \descriptionHeader{Achievement}{Dates}{Description}
+\entryListEnd
+
+\resumeSection{Skills}
+\entryListStart
+\skillEntry{Languages}{Something}
+\skillEntry{Tools}{Something}
+\skillEntry{Frameworks}{Something}
+\skillEntry{Spoken Languages}{Something}
+\skillEntry{Other Interests}{Something}
+\entryListEnd
+
+
+
+\end{document}
