@@ -4,5 +4,8 @@
   "obsidian-advanced-slides",
   "better-word-count",
   "obsidian-languagetool-plugin",
-  "obsidian-linter"
+  "obsidian-linter",
+  "obsidian-code-block-enhancer",
+  "cm-editor-syntax-highlight-obsidian",
+  "note-refactor-obsidian"
 ]
