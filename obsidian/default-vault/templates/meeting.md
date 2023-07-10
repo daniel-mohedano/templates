@@ -5,7 +5,7 @@ type: meeting
 summary: ""
 tags: 
 ---
-<% await tp.file.move("/meetings/ + tp.file.title") %>
+<% await tp.file.move("/meetings/" + tp.file.title) %>
 
 <%*
 const hasTitle = !tp.file.title.startsWith("NewMeeting");
