@@ -8,5 +8,8 @@
   "obsidian-code-block-enhancer",
   "cm-editor-syntax-highlight-obsidian",
   "note-refactor-obsidian",
-  "obsidian-paste-image-rename"
+  "obsidian-paste-image-rename",
+  "templater-obsidian",
+  "buttons",
+  "obsidian-admonition"
 ]

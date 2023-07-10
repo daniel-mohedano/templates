@@ -4,7 +4,7 @@
   "attachmentFolderPath": "./assets",
   "showInlineTitle": false,
   "showLineNumber": true,
-  "spellcheck": true,
+  "spellcheck": false,
   "spellcheckLanguages": [
     "en-US",
     "es-ES"
@@ -14,5 +14,8 @@
   "showFrontmatter": true,
   "newFileLocation": "current",
   "useMarkdownLinks": true,
-  "showUnsupportedFiles": true
+  "showUnsupportedFiles": true,
+  "spellcheckDictionary": [
+    "Dataview"
+  ]
 }

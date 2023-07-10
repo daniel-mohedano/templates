@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0b4ca4221335f88f",
+        "id": "b4b9fe397b604624",
         "type": "tabs",
         "children": [
           {
-            "id": "d6389fbba06aba94",
+            "id": "c462ec9c9b8620a5",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -147,11 +147,25 @@
       "markdown-importer:Open format converter": false,
       "zk-prefixer:Create new unique note": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-advanced-slides:Show Slide Preview": false
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "aeb339df1ef542f4",
+  "active": "c462ec9c9b8620a5",
   "lastOpenFiles": [
+    "test.md",
+    "templates/meeting.md",
+    "system/snippets.md",
+    "meetings/meetings.md",
+    "templates/meeting-index.md",
+    "meetings/202307101044.md",
+    "meetings/202307101043.md",
+    "meetings/20230710.md",
+    "meetings/20230709.md",
+    "meetings/New Meeting Created.md",
+    "meetings",
+    "system",
+    "templates",
     "202307091404.md",
     "something.md"
   ]
