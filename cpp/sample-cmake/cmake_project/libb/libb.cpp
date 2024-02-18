@@ -1,5 +1,5 @@
-#include "libb.hpp"
-#include "liba/liba.hpp"
+#include "libb.h"
+#include "../liba/liba.h"
 #include <iostream>
 
 namespace libb

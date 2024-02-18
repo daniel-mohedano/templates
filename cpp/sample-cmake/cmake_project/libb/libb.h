@@ -1,5 +1,4 @@
-#ifndef LIBB_HPP
-#define LIBB_HPP
+#pragma once
 
 namespace libb
 {
@@ -9,5 +8,3 @@ namespace libb
      */
     void test();
 }
-
-#endif

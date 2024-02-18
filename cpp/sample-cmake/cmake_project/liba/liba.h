@@ -1,5 +1,4 @@
-#ifndef LIBA_HPP
-#define LIBA_HPP
+#pragma once
 
 namespace liba
 {
@@ -9,5 +8,3 @@ namespace liba
      */
     void test();
 }
-
-#endif

@@ -1,4 +1,4 @@
-#include "liba.hpp"
+#include "liba.h"
 #include <iostream>
 
 namespace liba
