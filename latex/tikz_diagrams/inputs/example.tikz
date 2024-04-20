@@ -1,0 +1,32 @@
+% Color definitions
+\definecolor{darkpastelgreen}{rgb}{0.01, 0.75, 0.24}
+\definecolor{cadetgrey}{rgb}{0.57, 0.64, 0.69}
+
+% Tikz definitions
+\tikzset{
+    block/.style = {rectangle, draw, fill=white, minimum height=3em, minimum width=3em, align=center},
+    special_block/.style = {rectangle, draw=red, fill=white, minimum height=3em, minimum width=3em, align=center},
+    tag/.style = {rectangle, draw, fill=cyan, minimum height=1em, minimum width=1em, align=center},
+    dotted_block/.style = {rectangle, thick, dashed},
+    box/.style = {rectangle, thick, dashed, draw=darkpastelgreen, label={[rotate=90, anchor=south, text=darkpastelgreen]west:box}},
+    arrow/.style = {->, thick},
+}
+
+\begin{tikzpicture}[auto, node distance=1cm,>=latex']
+    % Blocks
+    \node [block] (a) {a};
+    \node [block, right=of a] (b) {b};
+    \node [block, right=of b] (c) {c};
+    \node [block, right=of c] (d) {d};
+    \node [block, right=of d] (e) {e};
+    \node [block, right=of e] (f) {f};
+
+    % Arrows
+    \draw [arrow] (a) -- (b) node[midway] (Aarrow) {};
+    \draw [arrow] (b) -- (c);
+    \draw [arrow] (c) -- (d);
+    \draw [arrow] (d) -- (e);
+
+    % Colored box
+    \node[box, fit=(a) (b) (c) (d) (e) (f)] (greenbox) {};
+\end{tikzpicture}
