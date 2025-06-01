@@ -1,0 +1,15 @@
+{
+  "cssTheme": "Minimal",
+  "baseFontSizeAction": true,
+  "translucency": false,
+  "textFontFamily": "Inter",
+  "monospaceFontFamily": "Inconsolata Nerd Font Mono",
+  "theme": "system",
+  "enabledCssSnippets": [
+    "task-color",
+    "task-metadata-fix",
+    "obsidian",
+    "monospace-source-mode"
+  ],
+  "accentColor": "#4b52b9"
+}

@@ -1,0 +1,9 @@
+{
+  "minimal-advanced@@styled-scrollbars": false,
+  "minimal-style@@checkbox-shape": "checkbox-square",
+  "minimal-style@@sidebar-tabs-style": "sidebar-tabs-plain-square",
+  "minimal-style@@sidebar-tabs-names": "tab-names-off",
+  "minimal-style@@tabs-style": "tabs-plain-square",
+  "minimal-style@@tag-border-width": "2px",
+  "minimal-style@@file-header-visibility": "minimal-tab-title-visible"
+}

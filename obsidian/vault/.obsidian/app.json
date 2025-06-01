@@ -1,0 +1,14 @@
+{
+  "livePreview": false,
+  "readableLineLength": true,
+  "propertiesInDocument": "source",
+  "showLineNumber": true,
+  "useTab": false,
+  "vimMode": true,
+  "useMarkdownLinks": false,
+  "showUnsupportedFiles": true,
+  "showInlineTitle": false,
+  "defaultViewMode": "preview",
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "attachments"
+}
